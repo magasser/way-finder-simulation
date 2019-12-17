@@ -13,12 +13,16 @@ public abstract class Entity {
     public Entity(final long x, final long y, final Color color) {
         this.loc = new Coordinate(x,y);
         this.color = color;
-        this.size = 2;
+        this.size = 4;
         this.isDead = false;
     }
 
     public Coordinate getLoc() {
         return loc;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     public String getColor() {

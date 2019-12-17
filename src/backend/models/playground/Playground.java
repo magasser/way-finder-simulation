@@ -1,10 +1,12 @@
 package backend.models.playground;
 
+import backend.models.entities.Ball;
 import backend.models.entities.Entity;
 import backend.models.obstacles.Obstacle;
 import backend.models.points.End;
 import backend.models.points.Point;
 import backend.models.points.Start;
+import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +28,10 @@ public class Playground {
         this.end = new End(endX, endY);
         this.entities = new ArrayList<>();
         this.obstacles = new ArrayList<>();
+
+        for(int i = 0; i < 1000; i++) {
+            addEntity(new Ball(start.getLoc().x, start.getLoc().y, Color.BLACK));
+        }
     }
 
     public List<Entity> getEntities() {
