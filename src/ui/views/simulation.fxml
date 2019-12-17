@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.layout.Pane?>
+<StackPane fx:id="rootSimulation" xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="backend.controllers.views.SimulationController">
+    <Pane fx:id="playground" StackPane.alignment="TOP_LEFT"/>
+</StackPane>

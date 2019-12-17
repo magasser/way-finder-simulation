@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootMenu" prefHeight="600" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backend.controllers.views.MenuController">
+    <VBox alignment="CENTER" spacing="20.0" StackPane.alignment="CENTER">
+        <Label text="Way Finder Simulation" textFill="#1622c9">
+         <font>
+            <Font name="Chiller" size="36.0" />
+         </font></Label>
+      <Button onAction="#startSimulation" mnemonicParsing="false" text="Start Simulation" textFill="#00610a">
+         <font>
+            <Font name="Chiller" size="24.0" />
+         </font>
+      </Button>
+    </VBox>
+</StackPane>
