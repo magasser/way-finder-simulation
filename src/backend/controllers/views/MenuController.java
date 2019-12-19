@@ -17,7 +17,7 @@ public class MenuController {
             rootMenu.getScene().setRoot(pane);
             pane.getScene().getWindow().centerOnScreen();
             SimulationController sc = loader.getController();
-            sc.rezise();
+            sc.resize();
         } catch (IOException e) {
             e.printStackTrace();
         }
